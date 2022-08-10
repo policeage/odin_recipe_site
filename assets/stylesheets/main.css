@@ -47,13 +47,39 @@ table {
 	border-spacing: 0;
 }
 /* style reset end */
-/* grids */
+/* grids columns */
 *,
 *:before,
 *:after {
     -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-            -box-sizing: border-box;
+            box-sizing: border-box;
+}
+.container,
+.grid {
+	margin: 0 auto;
+	width: 960px;
+}
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.col-1-3 {
+	width: 33.33%;
+}
+.col-2-3 {
+	width: 66.66%;
+}
+.col-1-3,
+.col-2-3 {
+	display: inline-block;
+	vertical-align: top;
+}
+.grid,
+.col-1-3,
+.col-2-3 {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 /* Clearfix */
 .group:before,
@@ -67,4 +93,92 @@ table {
 .group {
     clear: both;
     *zoom: 1;
+}
+/* Typography */
+h1, h3, h4, h5, p {
+	margin-bottom: 22px;
+}
+h1, h2, h3, h4, h5, p, li {
+	color:azure;
+}
+h1 {
+	font-size: 36px;
+	line-height: 44px;
+}
+h2 {
+	font-size: 24px;
+	line-height: 44px;
+}
+h3 {
+	font-size: 21px;
+}
+h4 {
+	font-size: 18px;
+}
+h5 {
+	font-size: 14px;
+	font-weight: 400;
+}
+strong {
+	font-weight: 400;
+}
+cite, em {
+	font-style: italic;
+}
+/* Header Footer Body Styles */
+.primary-header a,
+.primary-footer a {
+	color:white;
+}
+.primary-footer,
+.primary-header {
+	background-color: black;
+	color:white;
+	font-size: 14px;
+	padding-bottom: 44px;
+	padding-top: 44px;
+}
+.primary-footer small {
+	float: left;
+	font-weight: 400;
+}
+body {
+	background: grey;
+	color: grey;
+	font: 300 16px/22px "Open Sans", "Times New Roman", Arial;
+}
+.primary-nav {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
+.nav {
+	text-align: right;
+}
+.nav li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+.nav li:last-child {
+	margin-right: 0;
+}
+/* Link Styles */
+a:hover {
+	color:grey;
+}
+a {
+	color:white;
+	text-decoration: none;
+}
+p a {
+	border-bottom: 1px solid #dfe2e5;
+}
+/* recipe page styles (mostly to fix those images) */
+.recipe img {
+	border-radius: 5px;
+	display: block;
+	margin-bottom: 22px;
+	max-width: 100%;
 }
